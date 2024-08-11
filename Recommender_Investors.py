@@ -10,14 +10,14 @@ st.set_page_config(layout='wide')
 
 st.title('PF 2024 recommender')
 
-newsfolder = 'C:/Users/matth/PycharmProjects/Inframation/News/'
-dealsfolder = 'C:/Users/matth/PycharmProjects/Inframation/Global/'
+# newsfolder = 'C:/Users/matth/PycharmProjects/Inframation/News/'
+# dealsfolder = 'C:/Users/matth/PycharmProjects/Inframation/Global/'
 
 st.header('Deals')
-
 @st.cache_data
 def getdata():
-    deals = pd.read_csv(dealsfolder+'deals.csv').iloc[:,4:]
+    # deals = pd.read_csv(dealsfolder+'deals.csv').iloc[:,4:]
+    deals = pd.read_csv('deals.csv').iloc[:,4:]
     # deals['summary.description'] = deals['summary.description'].apply(lambda x: h.handle(str(x)))
     #
     # deals.to_csv(dealsfolder+'deals.csv')

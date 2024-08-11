@@ -17,7 +17,7 @@ st.header('Deals')
 @st.cache_data
 def getdata():
     # deals = pd.read_csv(dealsfolder+'deals.csv').iloc[:,4:]
-    deals = pd.read_csv('deals.csv').iloc[:,4:]
+    deals = pd.read_csv('deals.zip').iloc[:,4:]
     # deals['summary.description'] = deals['summary.description'].apply(lambda x: h.handle(str(x)))
     #
     # deals.to_csv(dealsfolder+'deals.csv')
